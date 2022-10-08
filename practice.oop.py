@@ -32,7 +32,7 @@ class Student(Person):
     def get_name(self) :
         return(self.__first_name + " " + self.__last_name)
 
-    def sef_gpa(self, GPA):
+    def set_gpa(self, GPA):
         self.__gpa = GPA
 
     def get_name(self):
@@ -46,13 +46,14 @@ class Faculty(Person):
         super().__init__(fName, lName)
         self.__tenure = tenure
 
-    def get_tenure_status(self):
+    def tenure_status(self):
         if self.__tenure == "Y":
             return(self.__first_name + ' ' + self.__last_name + ' has tenure.')
         elif self.__tenure == "N":
             return(self.__first_name + ' ' + self.__last_name + ' does not have tenure.')
 
-    # Falcuty Getters & Setters
+
+    # Faculty Getters & Setters
     def set_name (self, fname, lname) :
         self.__first_name = fname
         self.__last_name = lname
@@ -62,6 +63,9 @@ class Faculty(Person):
 
     def set_tenure(self, tenure) : 
         self.__tenure = tenure
+    
+    def get_tenure(self) :
+        return(self.get_tenure)
 
 #Course Class
 class Course(): 
