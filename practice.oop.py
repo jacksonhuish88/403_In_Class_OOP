@@ -48,9 +48,9 @@ class Faculty(Person):
 
     def get_tenure_status(self):
         if self.__tenure == "Y":
-            return(self.get_name + ' has tenure.')
+            return(self.get_name() + ' has tenure.')
         elif self.__tenure == "N":
-            return(self.get_name + ' does not have tenure.')
+            return(self.get_name() + ' does not have tenure.')
 
     def set_tenure(self, tenure) : 
         self.__tenure = tenure
