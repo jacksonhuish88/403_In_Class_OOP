@@ -8,6 +8,14 @@ class Person():
         self.__first_name = fName
         self.__last_name = lName
 
+# Student/Instructors Getters & Setters
+    def set_name (self, fname, lname) :
+        self.__first_name = fname
+        self.__last_name = lname
+
+    def get_name(self) :
+        return(self.__first_name + " " + self.__last_name)
+
 #Student Class
 class Student(Person):
     
@@ -23,14 +31,6 @@ class Student(Person):
                 return(self.__first_name + ' ' + self.__last_name + " has a Part Scholarship")
             else:
                 return(self.__first_name + ' ' + self.__last_name + " has No Scholarship")
-    
-    # Student Getters & Setters
-    def set_name (self, fname, lname) :
-        self.__first_name = fname
-        self.__last_name = lname
-
-    def get_name(self) :
-        return(self.__first_name + " " + self.__last_name)
 
     def set_gpa(self, GPA):
         self.__gpa = GPA
@@ -51,15 +51,6 @@ class Faculty(Person):
             return(self.__first_name + ' ' + self.__last_name + ' has tenure.')
         elif self.__tenure == "N":
             return(self.__first_name + ' ' + self.__last_name + ' does not have tenure.')
-
-
-    # Faculty Getters & Setters
-    def set_name (self, fname, lname) :
-        self.__first_name = fname
-        self.__last_name = lname
-
-    def get_name(self) :
-        return(self.__first_name + " " + self.__last_name)
 
     def set_tenure(self, tenure) : 
         self.__tenure = tenure
