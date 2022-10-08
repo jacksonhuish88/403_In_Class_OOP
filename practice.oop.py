@@ -38,6 +38,9 @@ class Student(Person):
     def get_gpa(self):
         return(self.__gpa)
 
+    def get_course_list(self) :
+        return(self.__course)
+
 
 #Faculty Class
 class Faculty(Person):
@@ -63,12 +66,6 @@ class Course():
     def __init__(self, cName):
         self.__course_name = cName
 
-    # Course Getters & Setters
-    def set_name(self, course) :
-        self.__course_name = course
-
-    def get_name(self) :
-        return(self.__course_name)
 
 
 #---------------------------------------------------
@@ -115,3 +112,4 @@ oFaculty = Faculty(oFfName, oFlName, oFTenure)
 
 # Return Faculty Tenure Status
 print(oFaculty.get_tenure_status())
+
