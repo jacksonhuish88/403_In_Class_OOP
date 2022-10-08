@@ -46,6 +46,10 @@ class Faculty(Person):
         elif self.tenure == "N":
             return(self.__first_name + ' ' + self.__last_name + ' does not have tenure.')
 
+    def set_name (self, fname, lname) :
+        self.__first_name = fname
+        self.__last_name = lname
+
 #Course Class
 class Course(): 
     def __init__(self, cName):
