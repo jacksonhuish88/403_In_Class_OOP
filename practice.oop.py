@@ -38,6 +38,9 @@ class Student(Person):
     def get_gpa(self):
         return(self.__gpa)
 
+    def set_course(self,course) :
+        self.__course.append(course)
+
     def get_course_list(self) :
         return(self.__course)
 
@@ -64,7 +67,7 @@ class Faculty(Person):
 #Course Class
 class Course(): 
     def __init__(self, cName):
-        self.__course_name = cName
+        
 
     
 
