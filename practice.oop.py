@@ -1,7 +1,3 @@
-#Testing Testing
-# Hey Dallas we are doing everything
-# WTF BRUH
-
 # Make attributes Private
 # Make Getters / Setters
 # oStud.Course.append()
@@ -59,6 +55,12 @@ class Course():
     def __init__(self, cName):
         self.__course_name = cName
 
+    def set_name(self, course) :
+        self.__course_name = course
+
+    def get_name(self) :
+        return(self.__course_name)
+
 
 #---------------------------------------------------
 #---------------- C O U R S E ----------------------
@@ -103,5 +105,3 @@ oFaculty = Faculty(oFfName, oFlName, oFTenure)
 
 # Return Faculty Tenure Status
 print(oFaculty.tenure_status())
-
-#Testing 
