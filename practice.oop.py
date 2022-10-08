@@ -47,10 +47,10 @@ class Faculty(Person):
         super().__init__(fName, lName)
         self.__tenure = tenure
 
-    def tenure_status(self):
-        if self.tenure == "Y":
+    def get_tenure_status(self):
+        if self.__tenure == "Y":
             return(self.__first_name + ' ' + self.__last_name + ' has tenure.')
-        elif self.tenure == "N":
+        elif self.__tenure == "N":
             return(self.__first_name + ' ' + self.__last_name + ' does not have tenure.')
 
     def set_name (self, fname, lname) :
