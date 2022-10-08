@@ -38,9 +38,7 @@ class Student(Person):
         return(self.__gpa)
 
 
-
-
-#Falcuty Class
+#Faculty Class
 class Faculty(Person):
     
     def __init__ (self, fName, lName, tenure) :
@@ -48,9 +46,9 @@ class Faculty(Person):
         self.__tenure = tenure
 
     def tenure_status(self):
-        if self.tenure == "Y":
+        if self.__tenure == "Y":
             return(self.__first_name + ' ' + self.__last_name + ' has tenure.')
-        elif self.tenure == "N":
+        elif self.__tenure == "N":
             return(self.__first_name + ' ' + self.__last_name + ' does not have tenure.')
 
     def set_name (self, fname, lname) :
@@ -59,6 +57,12 @@ class Faculty(Person):
 
     def get_name(self) :
         return(self.__first_name + " " + self.__last_name)
+
+    def set_tenure(self, tenure) : 
+        self.__tenure = tenure
+    
+    def get_tenure(self) :
+        return(self.get_tenure)
 
 #Course Class
 class Course(): 
