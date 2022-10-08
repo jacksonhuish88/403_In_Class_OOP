@@ -1,6 +1,11 @@
 #Testing Testing
 # Hey Dallas we are doing everything
 
+
+# Make attributes Private
+# Make Getters / Setters
+# oStud.Course.append()
+
 #Person Class
 class Person():
     def __init__ (self, fName, lName) :
