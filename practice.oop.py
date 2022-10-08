@@ -35,7 +35,7 @@ class Student(Person):
     def sef_gpa(self, GPA):
         self.__gpa = GPA
 
-    def get_name(self):
+    def get_gpa(self):
         return(self.__gpa)
 
 
@@ -118,4 +118,4 @@ oFTenure = input("Enter the faculty member's tenure status (Y/N): ").upper()
 oFaculty = Faculty(oFfName, oFlName, oFTenure)
 
 # Return Faculty Tenure Status
-print(oFaculty.tenure_status())
+print(oFaculty.get_tenure_status())
