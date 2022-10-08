@@ -26,11 +26,11 @@ class Student(Person):
 
     def scholarship_status(self):
             if self.__gpa >= 3.95:
-                return(self.__first_name + ' ' + self.__last_name + " has a Full Scholarship")
+                return(self.get_name + " has a Full Scholarship")
             elif self.__gpa >= 3.9:
-                return(self.__first_name + ' ' + self.__last_name + " has a Part Scholarship")
+                return(self.get_name+ " has a Part Scholarship")
             else:
-                return(self.__first_name + ' ' + self.__last_name + " has No Scholarship")
+                return(self.get_name + " has No Scholarship")
 
     def set_gpa(self, GPA):
         self.__gpa = GPA
@@ -48,15 +48,15 @@ class Faculty(Person):
 
     def get_tenure_status(self):
         if self.__tenure == "Y":
-            return(self.__first_name + ' ' + self.__last_name + ' has tenure.')
+            return(self.get_name + ' has tenure.')
         elif self.__tenure == "N":
-            return(self.__first_name + ' ' + self.__last_name + ' does not have tenure.')
+            return(self.get_name + ' does not have tenure.')
 
     def set_tenure(self, tenure) : 
         self.__tenure = tenure
     
     def get_tenure(self) :
-        return(self.get_tenure)
+        return(self.__tenure)
 
 #Course Class
 class Course(): 
