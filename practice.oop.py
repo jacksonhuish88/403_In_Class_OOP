@@ -30,6 +30,7 @@ class Student(Person):
 
     def get_name(self) :
         return(self.__first_name + " " + self.__last_name)
+
 #Falcuty Class
 class Faculty(Person):
     
