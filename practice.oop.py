@@ -1,18 +1,24 @@
 #Testing Testing
+# Hey Dallas we are doing everything
+# Creating Branch
+
+# Make attributes Private
+# Make Getters / Setters
+# oStud.Course.append()
 
 #Person Class
 class Person():
     def __init__ (self, fName, lName) :
-        self.first_name = fName
-        self.last_name = lName
+        self.__first_name = fName
+        self.__last_name = lName
 
 #Student Class
 class Student(Person):
     
     def __init__ (self, fName, lName, GPA) :
         super().__init__(fName, lName)
-        self.gpa = GPA
-        self.course = []
+        self.__gpa = GPA
+        self.__course = []
 
     def scholarship_status(self):
             if self.gpa >= 3.95:
@@ -22,12 +28,17 @@ class Student(Person):
             else:
                 return(self.first_name + ' ' + self.last_name + " has No Scholarship")
 
+
+    def set_name (self, fname, lname) :
+        self.__first_name = fname
+        self.__last_name = lname
+
 #Falcuty Class
 class Faculty(Person):
     
     def __init__ (self, fName, lName, tenure) :
         super().__init__(fName, lName)
-        self.tenure = tenure
+        self.__tenure = tenure
 
     def tenure_status(self):
         if self.tenure == "Y":
@@ -38,7 +49,7 @@ class Faculty(Person):
 #Course Class
 class Course(): 
     def __init__(self, cName):
-        self.course_name = cName
+        self.__course_name = cName
 
 
 #---------------------------------------------------
@@ -84,3 +95,5 @@ oFaculty = Faculty(oFfName, oFlName, oFTenure)
 
 # Return Faculty Tenure Status
 print(oFaculty.tenure_status())
+
+#Testing 
