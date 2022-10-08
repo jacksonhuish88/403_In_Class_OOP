@@ -23,7 +23,8 @@ class Student(Person):
                 return(self.__first_name + ' ' + self.__last_name + " has a Part Scholarship")
             else:
                 return(self.__first_name + ' ' + self.__last_name + " has No Scholarship")
-
+    
+    # Student Getters & Setters
     def set_name (self, fname, lname) :
         self.__first_name = fname
         self.__last_name = lname
@@ -51,6 +52,8 @@ class Faculty(Person):
         elif self.__tenure == "N":
             return(self.__first_name + ' ' + self.__last_name + ' does not have tenure.')
 
+
+    # Falcuty Getters & Setters
     def set_name (self, fname, lname) :
         self.__first_name = fname
         self.__last_name = lname
@@ -69,6 +72,7 @@ class Course():
     def __init__(self, cName):
         self.__course_name = cName
 
+    # Course Getters & Setters
     def set_name(self, course) :
         self.__course_name = course
 
