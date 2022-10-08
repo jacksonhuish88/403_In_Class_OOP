@@ -65,8 +65,8 @@ class Faculty(Person):
         return(self.__tenure)
 
 #Course Class
-class Course(): 
-    def __init__(self, cName):
+# class Course(): 
+#    def __init__(self, cName):
         
 
 
