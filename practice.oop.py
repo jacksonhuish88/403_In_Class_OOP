@@ -78,6 +78,7 @@ class Course():
 #Course Input
 oCName = input("Enter the course name: ")
 
+
 # Creating Course Object
 oCourse = Course("oCName")
 
@@ -93,7 +94,7 @@ oSGPA = float(input("Enter the student's GPA: "))
 
 # Creating Student Object
 oStudent = Student(oSfName, oSlName, oSGPA)
-oStudent.__course = oCourse
+oStudent.__course= oCourse
 
 # Return Student Scholarship Info
 print(oStudent.scholarship_status())
