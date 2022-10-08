@@ -52,7 +52,6 @@ class Faculty(Person):
         elif self.__tenure == "N":
             return(self.__first_name + ' ' + self.__last_name + ' does not have tenure.')
 
-
     # Falcuty Getters & Setters
     def set_name (self, fname, lname) :
         self.__first_name = fname
@@ -63,9 +62,6 @@ class Faculty(Person):
 
     def set_tenure(self, tenure) : 
         self.__tenure = tenure
-    
-    def get_tenure(self) :
-        return(self.get_tenure)
 
 #Course Class
 class Course(): 
