@@ -28,11 +28,12 @@ class Student(Person):
             else:
                 return(self.__first_name + ' ' + self.__last_name + " has No Scholarship")
 
-
     def set_name (self, fname, lname) :
         self.__first_name = fname
         self.__last_name = lname
 
+    def get_name(self) :
+        return(self.__first_name + " " + self.__last_name)
 #Falcuty Class
 class Faculty(Person):
     
@@ -49,6 +50,9 @@ class Faculty(Person):
     def set_name (self, fname, lname) :
         self.__first_name = fname
         self.__last_name = lname
+
+    def get_name(self) :
+        return(self.__first_name + " " + self.__last_name)
 
 #Course Class
 class Course(): 
