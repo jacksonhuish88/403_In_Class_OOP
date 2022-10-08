@@ -35,6 +35,15 @@ class Student(Person):
     def get_name(self) :
         return(self.__first_name + " " + self.__last_name)
 
+    def sef_gpa(self, GPA):
+        self.__gpa = GPA
+
+    def get_name(self):
+        return(self.__gpa)
+
+
+
+
 #Falcuty Class
 class Faculty(Person):
     
