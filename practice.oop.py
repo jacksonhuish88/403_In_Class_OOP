@@ -28,7 +28,7 @@ class Student(Person):
             if self.__gpa >= 3.95:
                 return(self.get_name + " has a Full Scholarship")
             elif self.__gpa >= 3.9:
-                return(self.get_name+ " has a Part Scholarship")
+                return(self.get_name + " has a Part Scholarship")
             else:
                 return(self.get_name + " has No Scholarship")
 
