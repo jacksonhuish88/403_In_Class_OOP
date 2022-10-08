@@ -22,11 +22,11 @@ class Student(Person):
 
     def scholarship_status(self):
             if self.gpa >= 3.95:
-                return(self.first_name + ' ' + self.last_name + " has a Full Scholarship")
+                return(self.__first_name + ' ' + self.__last_name + " has a Full Scholarship")
             elif self.gpa >= 3.9:
-                return(self.first_name + ' ' + self.last_name + " has a Part Scholarship")
+                return(self.__first_name + ' ' + self.__last_name + " has a Part Scholarship")
             else:
-                return(self.first_name + ' ' + self.last_name + " has No Scholarship")
+                return(self.__first_name + ' ' + self.__last_name + " has No Scholarship")
 
 #Falcuty Class
 class Faculty(Person):
@@ -37,9 +37,9 @@ class Faculty(Person):
 
     def tenure_status(self):
         if self.tenure == "Y":
-            return(self.first_name + ' ' + self.last_name + ' has tenure.')
+            return(self.__first_name + ' ' + self.__last_name + ' has tenure.')
         elif self.tenure == "N":
-            return(self.first_name + ' ' + self.last_name + ' does not have tenure.')
+            return(self.__first_name + ' ' + self.__last_name + ' does not have tenure.')
 
 #Course Class
 class Course(): 
@@ -69,7 +69,7 @@ oSGPA = float(input("Enter the student's GPA: "))
 
 # Creating Student Object
 oStudent = Student(oSfName, oSlName, oSGPA)
-oStudent.course = oCourse
+oStudent.__course = oCourse
 
 # Return Student Scholarship Info
 print(oStudent.scholarship_status())
